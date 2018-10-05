@@ -1,5 +1,3 @@
 package com.john.memory.gitshitdone
 
-data class Task() {
-    
-}
+data class Task( var taskDescription: String, var completionStatus: Boolean)
