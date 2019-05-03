@@ -29,12 +29,14 @@
         app:layout_constraintStart_toEndOf="@id/inputBox"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <TextView
-        android:id="@+id/TaskBox"
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Tasky"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""
-        style="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="32dp" />
 
 </android.support.constraint.ConstraintLayout>
